@@ -1,2 +1,4 @@
 # crazybot
-A useless bot with useless commands.
+A useless Discord bot with useless commands.
+
+Made with Python and discord.py

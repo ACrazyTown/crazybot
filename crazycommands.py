@@ -28,7 +28,7 @@ async def vibecheck(message):
         vibecheck_embed.set_image(url="https://cdn.discordapp.com/attachments/619275354049347605/770039014094405642/vibecheck.png")
         await message.channel.send(embed=vibecheck_embed)
     else:
-        asyncio.sleep(1.5)
+        await asyncio.sleep(1.5)
         vibecheck_embed = discord.Embed(title="Vibecheck", description=random.choice(vibecheck_message), color=accent_color)
         vibecheck_embed.set_image(url="https://cdn.discordapp.com/attachments/619275354049347605/770039014094405642/vibecheck.png")
         await message.channel.send(embed=vibecheck_embed)

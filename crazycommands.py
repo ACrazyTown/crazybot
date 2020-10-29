@@ -23,7 +23,7 @@ async def vibecheck(message):
         await message.channel.send(embed=embed)
     elif len(message.mentions) == 1:
         mention = message.mentions[0]
-        vb_message_mention = [f"*{mention} has failed the vibe check.*", "*{mention} has passed the vibe check.*"]
+        vb_message_mention = [f"*{mention} has failed the vibe check.*", "f*{mention} has passed the vibe check.*"]
         vibecheck_embed = discord.Embed(title="Vibecheck", description=random.choice(vb_message_mention), color=accent_color)
         vibecheck_embed.set_image(url="https://cdn.discordapp.com/attachments/619275354049347605/770039014094405642/vibecheck.png")
         await message.channel.send(embed=vibecheck_embed)

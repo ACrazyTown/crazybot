@@ -4,7 +4,7 @@ import crazycommands
 from platform import python_version
 
 client = discord.Client()
-p = str.lower("crazy")
+p = "crazy"
 py_ver = python_version()
 v = "1.0_dev"
 

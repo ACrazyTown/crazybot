@@ -38,5 +38,8 @@ async def on_message(message):
 
     if msg.startswith(f"{p} vibecheck"):
         await crazycommands.vibecheck(message)
+        
+    if msg.startswith(f"{p} getsomefreemoney"):
+        await crazycommands.getsomefreemoney(message)
     
 client.run(os.environ["TOKEN"])

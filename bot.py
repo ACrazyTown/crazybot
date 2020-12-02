@@ -33,8 +33,9 @@ async def on_member_remove(member):
 @client.event
 async def on_message(message):
     msg = message.content.lower()
-    #if message.author == client.user:
-        #return
+    # Check if the message author is the bot.
+    if message.author == client.user: 
+        return
 
     if msg.startswith(f"{p} vibecheck"):
         await crazycommands.vibecheck(message)

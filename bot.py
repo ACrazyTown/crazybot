@@ -1,8 +1,13 @@
 import discord
 import os
+import sys
 import crazycommands
+import json
 from platform import python_version
+from discord.ext import tasks
 
+with open("data.json", "r") as f:
+    token = json.load(f)["TOKEN"]
 intents = discord.Intents.all()
 client = discord.Client(intents=intents)
 botpfp = "https://cdn.discordapp.com/avatars/679783761247731729/e985affe9ddb2090a1465c11a765c6b9.jpg"
@@ -17,6 +22,12 @@ async def on_ready():
     print(f"I am {client.user}, and my prefix is {p}")
     print(f"I am running Python {py_ver} and my version is {v}")
     print("=" * 25)
+
+@tasks.loop(hours=24)
+async def update_24h():
+    bot_channel = client.get_channel(619275354049347605)
+    await bot_channel.send("I am currently rebooting and will be unusable.\n Check back in a minute!")
+    exit(3)
 
 @client.event
 async def on_member_join(member):
@@ -52,6 +63,11 @@ async def on_message(message):
         await crazycommands.yomama(message, botpfp)
 
     if msg.startswith(f"{p} debug info"):
-        await crazycommands.dbg_info(message, py_ver, p, v, client.user, botpfp)
+        if len(sys.argv) >= 2:
+            overseer = True
+        else:
+            overseer = False
+
+        await crazycommands.dbg_info(message, py_ver, p, v, client.user, botpfp, overseer)
     
-client.run(os.environ["TOKEN"])
+client.run(token)

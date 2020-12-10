@@ -13,13 +13,17 @@ ids = {
 
 accent_color = 0x0b8a7c
 
-async def dbg_info(message, py_ver, prefix, ver, name, botpfp):
+async def dbg_info(message, py_ver, prefix, ver, name, botpfp, overseer):
     embed = discord.Embed(title="Here's some Debug info... Nerd.", color=accent_color)
     embed.set_author(name="crazyBot", icon_url=botpfp)
     embed.add_field(name="Python Version", value=py_ver, inline=True)
     embed.add_field(name="Prefix", value=prefix, inline=True)
     embed.add_field(name="Bot Version", value=ver, inline=True)
     embed.add_field(name="Bot Name", value=name, inline=True)
+    if overseer == True:
+        embed.add_field(name="Overseer", value="ENABLED", inline=True)
+    else:
+        embed.add_field(name="Overseer", value="DISABLED", inline=True)
     await message.channel.send(embed=embed)
 
 async def vibecheck(message, botpfp):

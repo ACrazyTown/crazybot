@@ -1,4 +1,4 @@
-export TOKEN=YourTokenHere
+export TOKEN=MyToken
 
 cd $(dirname "$0")
 

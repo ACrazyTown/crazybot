@@ -33,7 +33,7 @@ async def vibecheck(message):
         vibecheck_embed.set_image(url="https://cdn.discordapp.com/attachments/619275354049347605/770039014094405642/vibecheck.png")
         await message.channel.send(embed=vibecheck_embed)
         
-async def getfreemoney(message)
+async def getfreemoney(message):
     # Not actually a scam, just a rickroll.
      
     embed = discord.Embed(title="Get some free money!", description=":wave:Hey!:wave: You are qualified to reedeem :money_mouth:thousands:money_mouth: of :moneybag:dollars:moneybag:. Just click this link and get your :moneybag:money:moneybag:!:point_right: <https://bit.ly/getsumfreemoneys>", color=accent_color)

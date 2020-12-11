@@ -18,7 +18,7 @@ def update():
         try:
             print(f"{up} Stashing local repository...")
             os.system("git stash")
-            print(f"{up} Reset local repository to default settings!") 
+            print(f"{up} Reset local repository to default settings!")
             print(f"{up} Attempting to pull crazyBot repo using Git...")
             os.system(f"git pull {repo}")
             print(f"{up} Pulled crazyBot repo successfully!")

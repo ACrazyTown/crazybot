@@ -69,5 +69,15 @@ async def on_message(message):
             overseer = False
 
         await crazycommands.dbg_info(message, py_ver, p, v, client.user, botpfp, overseer)
+
+    if msg.startswith(f"{p} update"):
+        # Check if Overseer is active
+        if len(sys.argv) >= 2:
+            overseer = True
+        else:
+            overseer = False
+
+        await crazycommands.update(message, botpfp, overseer)
+
     
 client.run(token)

@@ -13,7 +13,7 @@ client = discord.Client(intents=intents)
 botpfp = "https://cdn.discordapp.com/avatars/679783761247731729/e985affe9ddb2090a1465c11a765c6b9.jpg"
 p = "crazy"
 py_ver = python_version()
-v = "1.0_dev"
+v = "1.1_dev"
 
 @client.event
 async def on_ready():

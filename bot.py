@@ -59,7 +59,7 @@ async def on_message(message):
     if msg.startswith(f"{p} dadjoke"):
         await crazycommands.dadjoke(message, botpfp)
 
-    if msg.startswith(f"{p} yomama") or msg.startswith(f"{p} yomomma") or msg.startswith(f"{p} yourmother") or msg.startswith(f"{p} yourfemaleparent"):
+    if msg.startswith(f"{p} yomama") or msg.startswith(f"{p} yomomma") or msg.startswith(f"{p} yourmother") or msg.startswith(f"{p} yourmom") or msg.startswith(f"{p} yourmomther") or msg.startswith(f"{p} yourfemaleparent"):
         await crazycommands.yomama(message, botpfp)
 
     if msg.startswith(f"{p} debug info"):

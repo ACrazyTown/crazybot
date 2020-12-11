@@ -7,7 +7,6 @@ client_os = os.name
 verbose = True
 up = "[UPDATER]"
 repo = "https://github.com/ACrazyTown/crazyBot"
-init_dir = os.getcwd()
 
 def update():
     if verbose != False:
@@ -16,29 +15,26 @@ def update():
         print(f"{up} Attempting to update using main repository... ({repo})")
         if client_os != "posix":
             print("Windows is not supported... yet")
-        print(f"{up} Changing directory to ..")
-        os.chdir("../")
         try:
-            print(f"{up} Attempting to clone crazyBot repo using Git...")
-            os.system(f"git clone {repo}")
-            print(f"{up} Cloned crazyBot repo successfully!")
+            print(f"{up} Resetting local repository to default settings...")
+            os.system("git reset --hard")
+            print(f"{up} Reset local repository to default settings!") 
+            print(f"{up} Attempting to pull crazyBot repo using Git...")
+            os.system(f"git pull {repo}")
+            print(f"{up} Pulled crazyBot repo successfully!")
         except:
             print(f"{up} Uh oh! Something went wrong.")
-        print(f"{up} Changing directory to init dir...")
-        os.chdir(init_dir)
-        print(f"{up} Changed directory to init dir...")
         print(f"{up} Finished!")
     else:
         print(f"{up} Attempting to update...")
         if client_os != "posix":
             print("Windows is not supported... yet")
-        os.chdir("../")
         try:
+            os.system("git reset --hard")
             os.system(f"git clone {repo}")
-            print(f"{up} Cloned repo successfully!")
+            print(f"{up} Pulled repo successfully!")
         except:
             print(f"{up} Uh oh! Something went wrong.")
-        os.chdir(init_dir)
         print(f"{up} Finished!")
 
 def start_bot():

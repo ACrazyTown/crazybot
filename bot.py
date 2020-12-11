@@ -26,7 +26,7 @@ async def on_ready():
 @tasks.loop(hours=24)
 async def update_24h():
     bot_channel = client.get_channel(619275354049347605)
-    await bot_channel.send("I am currently rebooting and will be unusable.\n Check back in a minute!")
+    await bot_channel.send("I am currently doing my scheduled reboot and will be unavailable for a moment \nPlease check back soon!")
     exit(3)
 
 @client.event

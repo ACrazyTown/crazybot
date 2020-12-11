@@ -13,6 +13,21 @@ ids = {
 
 accent_color = 0x0b8a7c
 
+async def update(message, botpfp, overseer):
+    if message.author.guild_permissions.administrator == True:
+        if overseer == True:
+            print("[BOT] Updating...")
+            embed = discord.Embed(title="Update", description="Updating...", color=accent_color)
+            embed.set_author(name="crazyBot", icon_url=botpfp)
+            await message.channel.send(embed=embed)
+            exit(3)
+    else:
+        embed = discord.Embed(title="Insufficient Permission", description="You don't have the permission to run this command!", color=accent_color)
+        embed.set_author(name="crazyBot", icon_url=botpfp)
+        await message.channel.send(embed=embed)
+        
+    
+
 async def dbg_info(message, py_ver, prefix, ver, name, botpfp, overseer):
     embed = discord.Embed(title="Here's some Debug info... Nerd.", color=accent_color)
     embed.set_author(name="crazyBot", icon_url=botpfp)

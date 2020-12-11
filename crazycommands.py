@@ -20,7 +20,7 @@ async def update(message, botpfp, overseer):
             embed = discord.Embed(title="Update", description="Updating...", color=accent_color)
             embed.set_author(name="crazyBot", icon_url=botpfp)
             await message.channel.send(embed=embed)
-            exit(3)
+            exit(1)
     else:
         embed = discord.Embed(title="Insufficient Permission", description="You don't have the permission to run this command!", color=accent_color)
         embed.set_author(name="crazyBot", icon_url=botpfp)

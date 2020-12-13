@@ -15,7 +15,7 @@ Structure:
 
 ```json
 {
- "TOKEN":"YourTokenHere"
+ "TOKEN":"MyToken",
  "PREFIX":"Prefix",
  "VERSION":"Version",
  "ICON_URL":"BotPFPUrl"
@@ -23,11 +23,11 @@ Structure:
 ```
   
 (**OLD**)
+
 ```json
 {
-  "TOKEN":"YourTokenHere"
+ "TOKEN":"MyToken"
 }
 ```
-
 After specifying the JSON file, edit any specific values in **bot.py** and **crazycommands.py** to your wish.
 Then run the start.sh file and voila!

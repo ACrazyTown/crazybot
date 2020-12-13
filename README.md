@@ -1,5 +1,28 @@
-# crazybot
-A useless Discord bot with useless commands.
+# crazyBot
 
-This is my Discord Bot 2.0, originally called **Crazy's Awesome Discord Bot**, but I wanted to rewrite it and here we are!
-This repository is mainly to make it easier for me to work on the bot without having to give thousands of copies to my friends who work on it.
+A Discord bot made using the Discord.py Library who doe nothing useful.
+
+Originally named "Crazy's Awesome Discord Bot" it was really messy and bad so I've decided to rewrite it from scratch, hopefully making it better.
+
+## How to run?
+Although this repository is more meant to make it easier for my friends to work on the bot with me, you can run the bot. (You will have to remove or change some specific stuff though.)
+
+To run it, the bot needs a **data.json** file. 
+I haven't included it because the Update feature in the Overseer will overwrite it.
+
+Structure:
+(**NEW; Upcoming in Release 1.0**)
+  {
+    "TOKEN":"YourTokenHere"
+    "PREFIX":"Prefix",
+    "VERSION":"Version",
+    "ICON_URL":"BotPFPUrl"
+  }
+  
+(**OLD**)
+  {
+    "TOKEN":"YourTokenHere"
+  }
+  
+After specifying the JSON file, edit any specific values in **bot.py** and **crazycommands.py** to your wish.
+Then run the start.sh file and voila!

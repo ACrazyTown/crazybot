@@ -35,13 +35,13 @@ async def on_member_join(member):
     role = discord.utils.get(member.guild.roles, name="Citizens")
     mention = member.mention
     await member.add_roles(role)
-    await channel.send(f":arrow_right: **{mention}** welcome to The Crazy Town.")
+    await channel.send(f":arrow_right: **{mention}** welcome to **The Crazy Town™**.")
 
 @client.event
 async def on_member_remove(member):
     channel = client.get_channel(619268114357682247)
     mention = str(member)
-    await channel.send(f":arrow_left: **{mention}** has escaped Brazi- I mean has left The Crazy Town. ")
+    await channel.send(f":arrow_left: **{mention}** has escaped Brazi- I mean has left **The Crazy Town™**. ")
 
 @client.event
 async def on_message(message):

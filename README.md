@@ -12,17 +12,21 @@ I haven't included it because the Update feature in the Overseer will overwrite 
 
 Structure:
 (**NEW; Upcoming in Release 1.0**)
-  {
-    "TOKEN":"YourTokenHere"
-    "PREFIX":"Prefix",
-    "VERSION":"Version",
-    "ICON_URL":"BotPFPUrl"
-  }
+```json
+ {
+   "TOKEN":"YourTokenHere"
+   "PREFIX":"Prefix",
+   "VERSION":"Version",
+   "ICON_URL":"BotPFPUrl"
+ }
+```
   
 (**OLD**)
-  {
-    "TOKEN":"YourTokenHere"
-  }
-  
+```json
+{
+  "TOKEN":"YourTokenHere"
+}
+```
+
 After specifying the JSON file, edit any specific values in **bot.py** and **crazycommands.py** to your wish.
 Then run the start.sh file and voila!

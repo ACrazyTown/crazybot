@@ -12,13 +12,14 @@ I haven't included it because the Update feature in the Overseer will overwrite 
 
 Structure:
 (**NEW; Upcoming in Release 1.0**)
+
 ```json
- {
-   "TOKEN":"YourTokenHere"
-   "PREFIX":"Prefix",
-   "VERSION":"Version",
-   "ICON_URL":"BotPFPUrl"
- }
+{
+ "TOKEN":"YourTokenHere"
+ "PREFIX":"Prefix",
+ "VERSION":"Version",
+ "ICON_URL":"BotPFPUrl"
+}
 ```
   
 (**OLD**)

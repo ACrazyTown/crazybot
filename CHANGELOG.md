@@ -13,7 +13,7 @@ Version **RELEASE-1.0** is the first major release of crazyBot which is not a de
   
 #### Bot
 * Added logging system
- * Logs what the bot does, helpful for troubleshooting if Console doesn't report anything.
+  * Logs what the bot does, helpful for troubleshooting if Console doesn't report anything.
  
 #### crazyCommands
 * Cleaned & improved code

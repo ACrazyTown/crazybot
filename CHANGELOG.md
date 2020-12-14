@@ -10,6 +10,11 @@ Version **RELEASE-1.0** is the first major release of crazyBot which is not a de
   * Now includes a seperate `check_git()` function.
     * Checking is improved, instead of trying to run the `git` command, it uses `shutil.which` to find if Git is present.
   * Various improvements.
+  
+#### Bot
+* Added logging system
+ * Logs what the bot does, helpful for troubleshooting if Console doesn't report anything.
+ 
 #### crazyCommands
 * Cleaned & improved code
   * Using classes, the code is much cleaner and easier to read.

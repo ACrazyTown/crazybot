@@ -10,6 +10,8 @@ This is due to me deciding to move crazyBot to the discord.js library instead of
 
 There are multiple reasons to this but the main one is that the discord.js library is more up-to-date and stronger.
 
+I will update the pre-js branch to the last update I was working on with my friend, and then it's officially no longer supported.
+
 ## How to run?
 Although this repository is more meant to make it easier for my friends to work on the bot with me, you can run the bot. (You will have to remove or change some specific stuff though.)
 

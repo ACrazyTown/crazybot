@@ -2,7 +2,9 @@
 ## Version RELEASE-1.0
 Version **RELEASE-1.0** is the first major release of crazyBot which is not a development build.
 
-### Changes 
+### Changes
+**Now using the discord.js Library instead of discord.py**
+
 #### Overseer
 * Added logging system
   * Replaces the old `print()` system using the `logging` module included in Python. Because of this, the Overseer can also print logs to file.

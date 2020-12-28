@@ -19,15 +19,22 @@ To run it, the bot needs a **data.json** file.
 I haven't included it because the Update feature in the Overseer will overwrite it.
 
 Structure:
-(**NEW; Upcoming in Release 1.0**)
+(**NEW (Release 1.0+)**)
 
 ```json
-{
- "TOKEN":"MyToken",
- "PREFIX":"Prefix",
- "VERSION":"Version",
- "ICON_URL":"BotPFPUrl"
-}
+{"crazyBot":{
+    "settings":{
+        "token":"Token",
+        "prefix":"Prefix",
+        "version":"Version",
+        "icon_url":"Profile Picture URL",
+        "accent_color":"Embed Accent Color"
+    },
+    "temp":{
+        "on_reboot":"false",
+        "return_message_channel":""
+    }
+}}
 ```
   
 (**OLD**)

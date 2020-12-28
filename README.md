@@ -13,12 +13,12 @@ There are multiple reasons to this but the main one is that the discord.js libra
 I will update the pre-js branch to the last update I was working on with my friend, and then it's officially no longer supported.
 
 ## How to run?
-Although this repository is more meant to make it easier for my friends to work on the bot with me, you can run the bot. (You will have to remove or change some specific stuff though.)
+Even though this repository is meant to make it easier for me to work on the Bot with my friends, you are allowed to run it yourself. (You will not receive any support though.)
 
-To run it, the bot needs a **data.json** file. 
-I haven't included it because the Update feature in the Overseer will overwrite it.
+The Bot needs a **data.json** file to read settings. 
+I don't include it in the repository because the Overseer's Update feature would overwrite it.
 
-Structure:
+JSON Structure:
 (**NEW (Release 1.0+)**)
 
 ```json
@@ -36,7 +36,7 @@ Structure:
     }
 }}
 ```
-  
+
 (**OLD**)
 
 ```json
@@ -44,5 +44,6 @@ Structure:
  "TOKEN":"MyToken"
 }
 ```
-After specifying the JSON file, edit any specific values in **bot.py** and **crazycommands.py** to your wish.
-Then run the start.sh file and voila!
+After specifying the JSON file, edit any specific values in **bot.js** the commands folder to your wish.
+
+When you do all that, just run the **start.sh** script and you're good to go!

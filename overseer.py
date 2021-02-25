@@ -24,11 +24,6 @@ if clean_logs_on_start == True:
         os.remove(f)
     print("Erased all logs.")
 
-#class NoGitError(Exception):
-#     # Git is not found in the OS, OS is most likely Windows as 
-#     # Linux and macOS come with Git preinstalled
-#     pass
-
 def clean_json_temp():
     with open("data.json", "r") as f:
         data = json.load(f)
@@ -49,7 +44,6 @@ def check_for_git():
             loggerMain.info("Git is installed.")
         else:
             loggerMain.critical("Git is not installed! Try installing Git and trying again!")
-            # raise NoGitError("Git is not installed! Try installing Git and trying again!")
             exit()
     else:
         pass
@@ -59,7 +53,6 @@ def update():
         loggerMain.debug(f"[INIT-UPDATER] Verbose is set to {verbose}, running in Verbose mode...")
         print(f"{op} Checking if Git is installed...")
         check_for_git()
-        # print(f"{up} Attempting to update...")
         print(f"{up} Attempting to update using main repository... ({repo})")
         try:
             print(f"{up} Resetting local repository...")

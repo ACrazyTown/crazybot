@@ -13,4 +13,8 @@ def main_logger():
     else:
         pass  
 
-    logging.basicConfig(level=logging.DEBUG, handlers=[logging.StreamHandler(), logging.FileHandler(logfile)], format="[%(asctime)s | %(module)s - %(funcName)s | %(name)s | %(levelname)s] %(message)s", datefmt=date_format)
+    logging.basicConfig(level=logging.DEBUG,
+                        handlers=[logging.StreamHandler(),
+                                  logging.FileHandler(logfile)],
+                        format="[%(asctime)s | %(module)s - %(funcName)s | %(name)s | %(levelname)s] %(message)s",
+                        datefmt=date_format)

@@ -1,0 +1,13 @@
+{"crazyBot":{
+    "settings":{
+        "token":"Token",
+        "prefix":"Prefix",
+        "version":"Version",
+        "icon_url":"Profile Picture URL",
+        "accent_color":"Embed Accent Color"
+    },
+    "temp":{
+        "on_reboot":"false",
+        "return_message_channel":""
+    }
+}}

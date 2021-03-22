@@ -6,6 +6,11 @@ def main_logger():
     date_format_file = "%d%m%Y_%H%M%S"
     date_format = "%d/%m/%Y %H:%M:%S"
 
+    try:
+        os.chdir(__file__.replace(os.path.basename(__file__), ""))
+    except:
+        pass
+
     logfile = f"logs/log_{datetime.datetime.now().strftime(date_format_file)}.txt"
     if not os.path.exists(logfile):
         with open(logfile, "w") as f:

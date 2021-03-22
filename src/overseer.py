@@ -8,6 +8,11 @@ import glob
 import logging
 from crazylogger import main_logger
 
+try:
+    os.chdir(__file__.replace(os.path.basename(__file__), ""))
+except:
+    pass
+
 client_os = os.name
 verbose = True
 clean_logs_on_start = True

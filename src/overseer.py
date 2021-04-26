@@ -66,8 +66,6 @@ def update():
             print(f"{up} Attempting to pull crazyBot repo using Git...")
             os.system(f"git pull {repo}")
             print(f"{up} Pulled crazyBot repo successfully!")
-            os.system("git stash pop")
-            print(f"{up} Restored data.json")
         except:
             print(f"{up} Uh oh! Something went wrong.")
         print(f"{up} Finished!")

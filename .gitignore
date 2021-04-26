@@ -2,3 +2,4 @@ log_*.*
 src/node_modules
 src/package-lock.json
 *.pyc
+src/data.json

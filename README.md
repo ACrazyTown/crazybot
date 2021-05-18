@@ -29,7 +29,7 @@ https
 
 After installing all that crap you're almost ready to go!
 Then, make a file called `data.json` in `src/` and copy paste the following (of course, you're gonna have to replace the placeholder text with ACTUAL stuff so the bot can run):
-```
+```json
 {
   "crazyBot": {
     "settings": {

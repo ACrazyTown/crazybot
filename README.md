@@ -1,10 +1,8 @@
 # crazyBot
 
-A Discord Bot made using the [discord.js](https://discord.js.org/) library that does literally nothing useful.
+A Discord bot made using the [discord.js](https://discord.js.org/) library that does literally nothing useful.
 
 Originally named "Crazy's Awesome Discord Bot", it was really messy and bad so I've decided to rewrite it from scratch, hopefully making it better (plot twist: i didnt).
-
-**you're allowed to do whatever you want with the bot AS LONG as you open source it**
 
 ## How to run?
 
